@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+
+header {
+  background: #ccc;
+  position: sticky;
+  top: 0;
+  padding: 2px;
+  opacity: 0.8;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+.head ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-self: center;
+}
+.head h1 a {
+  color: black;
+  text-decoration: none;
+}
+.head ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+.head ul li a:hover {
+  background-color: rgb(240, 75, 75);
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+#homepage {
+  font-size: 40px;
+  margin: 20px;
+}
+#homepage:hover {
+  background-color: rgb(240, 75, 75);
+    padding: 5px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+/* Main */
+
+.container h1 {
+  text-align: center;
+  font-size: 46px;
+}
+.container p {
+  text-align: start;
+  font-size: 18px;
+  margin: 20px 50px;
+}
+.picture {
+  text-align: center;
+  margin: 20px;
+}
+.picture img {
+  width: 800px;
+  border-radius: 10px;
+}
+.video {
+  text-align: center;
+}
+.ptext {
+  margin: 10px 200px;
+  text-align: start;
+  box-shadow: 0px 0px 20px 5px #ccc;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+/* Táblázat */
+
+.container h2 {
+  text-align: center;
+}
+.container .center-p {
+  text-align: center;
+}
+table{
+  border-collapse: collapse;
+  border: solid 1px;
+  margin: 20px auto;
+}
+th, td {
+  border: solid 1px;
+  padding: 10px;
+}
+
+/* Footer */
+
+footer {
+  background: black;
+  opacity: 0.8;
+  margin-top: 50px;
+}
+footer h1 {
+  text-align: center;
+  color: white;
+}
+
+/* Média - reszponzív*/
+
+@media (max-width:786px) {
+  
+  /* Header */
+    .head {
+    margin: 0 10px;
+  }
+  .head h1 {
+    margin-left: -10px;
+    margin-bottom:10px;
+  }
+  .head h1 a i {
+    font-size: 24px;
+  }
+  .head ul {
+    gap: 1rem;
+  }
+  .head ul li a {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  /* Main */
+  .container h1 {
+    margin-top: 20px;
+    font-size: 23px;
+  }
+  .picture img {
+    width: 100%;
+  }
+  .video iframe {
+    width: 95%;
+  }
+  .container p {
+    font-size: 14px;
+  }
+  .ptext {
+    margin: 10px 10px;
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  table {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  footer h1 {
+    font-size:20px ;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width:348px) {
+  .head h1 a i {
+    font-size: 20px;
+  }
+  .head ul li a {
+    font-size: 10px;
+    font-weight: 700;
+  }
+}
